@@ -10,9 +10,21 @@ import { SensorsModule } from './sensors/sensors.module';
 import { ActuatorsModule } from './actuators/actuators.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from './config/config.module';
+import { EventEmitterModule } from '@nestjs/event-emitter';
 
 @Module({
-  imports: [CoreModule, FleetModule, VehiclesModule, ChargingStationsModule, DriversModule, SensorsModule, ActuatorsModule, AuthModule, ConfigModule],
+  imports: [
+    CoreModule,
+    FleetModule,
+    VehiclesModule,
+    ChargingStationsModule,
+    DriversModule,
+    SensorsModule,
+    ActuatorsModule,
+    AuthModule,
+    ConfigModule,
+    EventEmitterModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
