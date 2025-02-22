@@ -3,6 +3,6 @@ import { ChargingService } from './charging/charging.service';
 import { MovementService } from './movement/movement.service';
 
 @Module({
-  providers: [ChargingService, MovementService]
+  providers: [ChargingService, MovementService],
 })
 export class ActuatorsModule {}
