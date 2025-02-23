@@ -14,6 +14,7 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { FleetManagerService } from './nodes/fleet-manager/fleet-manager.service';
 import { ChargingStationService } from './nodes/charging-station/charging-station.service';
 import { VehicleService } from './nodes/vehicle/vehicle.service';
+import { VehicleNodeService } from './nodes/vehicle-node/vehicle-node.service';
 
 @Module({
   imports: [
@@ -29,6 +30,6 @@ import { VehicleService } from './nodes/vehicle/vehicle.service';
     EventEmitterModule,
   ],
   controllers: [AppController],
-  providers: [AppService, FleetManagerService, ChargingStationService, VehicleService],
+  providers: [AppService, FleetManagerService, ChargingStationService, VehicleService, VehicleNodeService],
 })
 export class AppModule {}
